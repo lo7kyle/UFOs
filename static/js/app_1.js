@@ -7,8 +7,9 @@ var tbody = d3.select("tbody");
 function buildTable(data) {
     // Clears out any existing data
     tbody.html("");
+
     // loop through each obj in data and append a row and cell for each value in row
-    data.array.forEach(dataRow => {
+    data.forEach((dataRow) => {
         // this tells js to find tbody tag in html and add table row <tr> 
         let row = tbody.append("tr");
         /* loops through each field in dataRow 
